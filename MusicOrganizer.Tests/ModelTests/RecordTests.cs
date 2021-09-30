@@ -59,5 +59,13 @@ namespace MusicOrganizer.Tests
       List<Record> emptyList = new List<Record> {};
       CollectionAssert.AreEqual(emptyList, testList);
     }
+    [TestMethod]
+    public void Record_ConstructorAssignsUniqueId_True()
+    {
+      string recordName = "album name";
+      string artistName = "artist name";
+      Record newRecord = new Record(recordName, artistName);
+      Assert.AreEqual(0, newRecord.Id);
+    }
   }
 }
