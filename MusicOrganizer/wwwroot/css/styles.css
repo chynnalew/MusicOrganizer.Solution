@@ -18,3 +18,7 @@ body {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.658), black);
   box-shadow:inset 5px -30px 30px 2px #ffffffb9;
 }
+
+li {
+  text-align: left;
+}

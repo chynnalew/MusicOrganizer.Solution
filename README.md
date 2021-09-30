@@ -4,7 +4,7 @@
 
 # Music Organizer
 
-#### This is a C# web application ...
+#### This is a C# web application allows users to input artists and records.
 
 #### _By Paige Tiedeman & Chynna Lew_
 
@@ -17,7 +17,7 @@
 
 ## Description
 
-This web application takes users inputs of items and places them in a UL list using RESTful routing.
+This web application takes users inputs of album names and artists and places them in a UL list using RESTful routing. Users can also delete entires.
 
 ## Installation Requirements
 
@@ -31,11 +31,11 @@ This web application takes users inputs of items and places them in a UL list us
 
 
 ## Steps To Use
-* _In your terminal navigate into ProjectName.Solution/ProjectName_
+* _In your terminal navigate into MusicOrganizer.Solution/MusicOrganizer_
 * _Run `$ dotnet build` to build the site_
 * _Run `$ dotnet run` to start the live server_
 * _Click either button to add or see the list_
-* _After clicking add item put in your inputs and hit submit to reveal the list!_
+* _After clicking add record put in your inputs and hit submit to reveal the list!_
 
 ## Known Bugs
 
@@ -43,12 +43,13 @@ This web application takes users inputs of items and places them in a UL list us
 
 ## License
 
-MIT: See Badge at top for Info
-Copyright (c) 2021 Paige Tiedeman
+MIT: See Badge at top for Info  
+Copyright (c) 2021 Paige Tiedeman and Chynna Lew
 
 ## Contact Information
 
-_Paige Tiedeman @ github.com/paigetiedeman_  
+_Paige Tiedeman @ github.com/paigetiedeman_
+_Chynna Lew_  
 
 [license-shield]: https://img.shields.io/badge/License-MIT-blue
 [license-url]: https://opensource.org/licenses/MIT
