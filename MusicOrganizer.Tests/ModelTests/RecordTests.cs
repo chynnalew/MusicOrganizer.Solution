@@ -38,5 +38,15 @@ namespace MusicOrganizer.Tests
       List<Record> testList = Record.GetList();
       CollectionAssert.AreEqual(emptyList,testList);
     }
+    [TestMethod]
+    public void GetList_ReturnRecordAndArtistName_RecordList()
+    {
+      string recordName = "album name";
+      string artistName = "artist name";
+      Record newRecord = new Record(recordName, artistName);
+      List<Record> testList = new List<Record> {newRecord};
+      List<Record> resultList = Record.GetList();
+      CollectionAssert.AreEqual(testList, resultList);
+    }
   }
 }
