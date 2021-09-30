@@ -61,11 +61,18 @@ namespace MusicOrganizer.Tests
     }
     [TestMethod]
     public void Record_ConstructorAssignsUniqueId_True()
-    {
+    {      
       string recordName = "album name";
       string artistName = "artist name";
       Record newRecord = new Record(recordName, artistName);
       Assert.AreEqual(0, newRecord.Id);
+    }
+    [TestMethod]
+    public void Record_ConstructorAssignsUniqueIds_True()
+    {      
+      Record newRecord = new Record("album name", "artist name");
+      Record newRecord2 = new Record("album name 2", "artist name 2");
+      Assert.AreEqual(1, newRecord2.Id);
     }
   }
 }
