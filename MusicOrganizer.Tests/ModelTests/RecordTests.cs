@@ -48,5 +48,16 @@ namespace MusicOrganizer.Tests
       List<Record> resultList = Record.GetList();
       CollectionAssert.AreEqual(testList, resultList);
     }
+    [TestMethod]
+    public void ClearAll_ClearsThePrivateList_True()
+    {
+      string recordName = "album name";
+      string artistName = "artist name";
+      Record newRecord = new Record(recordName, artistName);
+      Record.ClearAll();
+      List<Record> testList = Record.GetList();
+      List<Record> emptyList = new List<Record> {};
+      CollectionAssert.AreEqual(emptyList, testList);
+    }
   }
 }
