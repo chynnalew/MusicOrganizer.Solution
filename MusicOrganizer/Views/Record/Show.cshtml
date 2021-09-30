@@ -1,0 +1,11 @@
+@using MusicOrganizer.Models;
+@{
+  Layout = "_Layout";
+}
+
+
+<h1>@Model.RecordName</h1>
+<h3>@Model.ArtistName</h3>
+<form action="/record/@Model.Id" method="post">
+  <button type="submit" class="btn btn-dark">Delete this record</button>
+</form>
