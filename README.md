@@ -2,11 +2,11 @@
 [![Language][languageH-shield]][languageH-url]
 [![MIT License][license-shield]][license-url]
 
-# Project Name
+# Music Organizer
 
 #### This is a C# web application ...
 
-#### _By Paige Tiedeman_
+#### _By Paige Tiedeman & Chynna Lew_
 
 ## Technologies Used
 
