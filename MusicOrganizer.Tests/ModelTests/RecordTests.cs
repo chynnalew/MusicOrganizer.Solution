@@ -6,8 +6,13 @@ using MusicOrganizer.Models;
 namespace MusicOrganizer.Tests
 {
   [TestClass]
-  public class RecordTests
+  public class RecordTests : IDisposable
   {
+    public void Dispose()
+    {
+      Record.ClearAll();
+    }
+
     [TestMethod]
     public void RecordConstructor_CreatesInstanceOfRecord_Record()
     {
@@ -25,6 +30,13 @@ namespace MusicOrganizer.Tests
     {
       Record newArtist = new Record("album name", "artist name");
       Assert.AreEqual(newArtist.ArtistName, "artist name");
+    }
+    [TestMethod]
+    public void List_ReadsEmptyList_True()
+    {
+      List<Record> emptyList = new List<Record>{};
+      List<Record> testList = Record.GetList();
+      CollectionAssert.AreEqual(emptyList,testList);
     }
   }
 }
