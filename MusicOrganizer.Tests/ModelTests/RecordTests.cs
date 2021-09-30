@@ -74,5 +74,16 @@ namespace MusicOrganizer.Tests
       Record newRecord2 = new Record("album name 2", "artist name 2");
       Assert.AreEqual(1, newRecord2.Id);
     }
+    [TestMethod]
+    public void DeleteRecord_DeleteASingleRecordFromTheList_True()
+    {
+      Record newRecord = new Record("album name", "artist name");
+      Record newRecord2 = new Record("album name 2", "artist name 2");
+      List<Record> testList = Record.GetList();
+      List<Record> list2 = new List<Record>{};
+      list2.Add(newRecord);
+      Record.DeleteRecord(1);
+      CollectionAssert.AreEqual(testList, list2);
+    }
   }
 }
